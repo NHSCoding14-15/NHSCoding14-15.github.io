@@ -1,0 +1,28 @@
+<header class="site-header">
+  <h1> Northglenn HS Coding Club </h1>
+
+  <div class="wrapper">
+
+    <!--a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a-->
+
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/links.html">Useful Links</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+
+  </div>
+  <script>
+      /* global getCookie */
+      var style = getCookie("style");
+      console.log(style);
+      if (style){
+        console.log(style);
+        document.body.className = style;
+        document.getElementById(style).selected = true;
+      }
+      document.styleselector.style.display = 'block'
+    </script>
+</header>
